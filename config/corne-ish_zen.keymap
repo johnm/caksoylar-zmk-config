@@ -1,0 +1,13 @@
+#define THREE_THUMBS
+
+#include "3x5.keymap"
+
+&five_column_transform {
+    col-offset = <6>;
+};
+
+/ {
+    chosen {
+        zmk,matrix_transform = &five_column_transform;
+    };
+};
