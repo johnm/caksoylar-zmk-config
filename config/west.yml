@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
+      remote: caksoylar
+      revision: caksoylar/ffkb+experimental
       import: app/west.yml
   self:
     path: config
