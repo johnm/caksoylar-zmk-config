@@ -46,6 +46,7 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+            global-quick-tap-ms = <100>;
         };
         as: alpha_shift {
             compatible = "zmk,behavior-hold-tap";
