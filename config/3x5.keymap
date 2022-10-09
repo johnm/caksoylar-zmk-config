@@ -102,23 +102,6 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <21>;
         };
-
-		// shift+backspace to delete
-		bd: bspc_del {
-			compatible = "zmk,behavior-mod-morph";
-			label = "BSPC_DEL";
-			#binding-cells = <0>;
-			bindings = <&kp BSPC>, <&kp DEL>;
-			mods = <MOD_RSFT>;
-        };
-		lt_bd: layer_tap_bspc_del {
-			compatible = "zmk,behavior-hold-tap";
-			label = "LAYER_TAP_BSPC_DEL";
-			#binding-cells = <2>;
-			bindings = <&mo>, <&bd>;		
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-        };
     };
 
     cond_layers {
@@ -155,9 +138,9 @@
      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt_bd NAV 0      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
+                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
 #else
-                                               &mt LCTRL ESC &lt_bd NAV 0      &lt SYM SPACE &mt RSHFT RET
+                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
@@ -174,9 +157,9 @@
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt_bd NAV 0      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
+                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
 #else
-                                               &mt LCTRL ESC &lt_bd NAV 0      &lt SYM SPACE &mt RSHFT RET
+                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
