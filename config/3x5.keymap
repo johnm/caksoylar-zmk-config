@@ -56,8 +56,8 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             global-quick-tap-ms = <100>;
-			hold-trigger-key-positions = <KEYS_R THUMBS>;
-			hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -67,8 +67,8 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_R THUMBS>;
-			hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
         };
         amr: alpha_mods_r {
             compatible = "zmk,behavior-hold-tap";
@@ -79,8 +79,8 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             global-quick-tap-ms = <100>;
-			hold-trigger-key-positions = <KEYS_L THUMBS>;
-			hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
@@ -90,8 +90,8 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_L THUMBS>;
-			hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
         };
 
         // Swapper for smart alt+tab
